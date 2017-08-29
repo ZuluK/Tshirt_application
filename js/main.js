@@ -16,7 +16,7 @@ var blacktee = new Tshirt("Black Tee", "medium", "black", 300,"img/blacktee.png"
 var redtee = new Tshirt("Red Tee", "large", "red", 100, "img/redtee.png")
 var bluetee = new Tshirt("Blue Tee", "small", "blue", 200, "img/bluetee.png")
 var greentee = new Tshirt("Green Tee", "small", "blue", 150, "img/greentee.png")
-var yellowtee = new Tshirt("Yellow Tee", "large", "yellow", 200, "img/yellow.gif")
+var yellowtee = new Tshirt("Yellow Tee", "large", "yellow", 200, "img/yellow.png")
 //create array to add products too
 var TshirtArray = new Array
 //add products to array of products
@@ -27,9 +27,9 @@ for(var i = 0; i < TshirtArray.length;i++){
   var Nitem = document.createElement("div")
   var newDiv = document.createElement("div")
   var nameHeader = document.createElement("h1")
-  var sizeHeader = document.createElement("h3")
-  var colorHeader = document.createElement("h3")
-  var stockHeader = document.createElement("h3")
+  var sizeHeader = document.createElement("h4")
+  var colorHeader = document.createElement("h4")
+  var stockHeader = document.createElement("h4")
   var btn = document.createElement("button")
   var image = document.createElement("img")
 
@@ -45,10 +45,10 @@ for(var i = 0; i < TshirtArray.length;i++){
   image.src = TshirtArray[i].image
 
   //updates the class attributes
-  image.className = 'img-responsive'
+  image.className = "img-responsive"
   btn.className = "btn btn-primary btn-lg"
-  Nitem.className = "col-sm-4"
-  newDiv.clasName = "tshirt Shirtname" + [i] + " thumbnail"
+  newDiv.className = "col-sm-4"
+  newDiv.clasName = "tshirt ShirtName" + [i] + " thumbnail"
 
   //appends text to elements
   nameHeader.appendChild(tName)
